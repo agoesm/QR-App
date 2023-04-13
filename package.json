@@ -1,0 +1,48 @@
+{
+  "name": "qrapp",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "pod": "cd ios && pod install && cd ..",
+    "pod:update": "cd ios && pod update && cd ..",
+    "gradle_clean": "cd android && ./gradlew clean && cd ..",
+    "reset_cache": "react-native start --reset-cache",
+    "test": "jest",
+    "lint": "eslint .",
+    "postinstall": "patch-package"
+  },
+  "dependencies": {
+    "@react-navigation/native": "^6.1.6",
+    "@react-navigation/stack": "^6.3.16",
+    "deprecated-react-native-prop-types": "^4.0.0",
+    "patch-package": "^6.5.1",
+    "postinstall-postinstall": "^2.1.0",
+    "react": "18.1.0",
+    "react-native": "0.70.6",
+    "react-native-camera": "^4.2.1",
+    "react-native-gesture-handler": "^2.9.0",
+    "react-native-html-to-pdf": "^0.12.0",
+    "react-native-qrcode-scanner": "^1.5.5",
+    "react-native-qrcode-svg": "^6.2.0",
+    "react-native-safe-area-context": "^4.5.1",
+    "react-native-screens": "^3.20.0",
+    "react-native-share": "^8.2.1",
+    "react-native-svg": "^13.9.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/runtime": "^7.12.5",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.32.0",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "0.72.3",
+    "react-test-renderer": "18.1.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
